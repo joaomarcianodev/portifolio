@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+  padding-top: 50px;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-title p {
+  color: #6c757d;
+}
+
+/* Navbar */
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.nav-link {
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.2s ease-in-out; /* Adiciona transição suave */
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #0dcaf0; /* Cor de destaque (o ciano do seu CTA) */
+}
+
+/* Home Section */
+#home {
+  background: url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop")
+    no-repeat center center/cover;
+  color: white;
+  position: relative;
+  min-height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Overlay escuro */
+}
+
+#home .container {
+  position: relative;
+  z-index: 2;
+}
+
+#home .display-1 {
+  font-size: 4.5rem;
+}
+
+/* About Section */
+#about img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Skills & Projects Card Styles */
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text {
+  flex-grow: 1;
+}
+
+#projects .language-badge {
+  font-size: 0.8rem;
+}
+
+/* Skills Section Animation */
+.skills-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Espaçamento entre os ícones */
+  padding-top: 10px;
+}
+
+.skill-icon {
+  height: 48px; /* Tamanho padrão do ícone */
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.skill-icon:hover {
+  transform: scale(1.2) translateY(-5px);
+}
+
+/* CTA Section */
+#cta-landing {
+  background: linear-gradient(45deg, #0d6efd, #0dcaf0);
+  color: white;
+  padding: 60px 0;
+}
+
+#cta-landing h2 {
+  font-weight: 700;
+}
+
+#cta-landing .btn {
+  font-weight: 700;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+}
+
+/* Contact Section */
+#contact .btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+#contact .btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-pink {
+  background-color: #e4405f;
+  border-color: #e4405f;
+  color: white;
+}
+
+.btn-pink:hover {
+  background-color: #d33c56;
+  border-color: #d33c56;
+  color: white;
+}
+
+/* Footer */
+footer {
+  padding: 20px 0;
+}
